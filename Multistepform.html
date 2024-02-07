@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Multi Step Form | OnlineITtuts</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Tell us a little bit about yourself</h3>
+      <form id="form1">
+        
+        <label for="Name" class="Name">Name: </label>
+        <div><input type="text"/></div>
+         <div class="btn_box">
+          <button id="next1" type="button">Next</button>
+        </div>
+      </form>
+      <form id="form2">
+        
+        <label for="Email" class="Email">Email: </label>
+        <div><input type="text"/></div>
+        <div class="btn_box">
+          <button id="back1" type="button">Previous</button>
+          <button id="next2" type="button">Next</button>
+        </div>
+      </form>
+      <form id="form3">
+       
+        <label for="phone" class="phone">Phone: </label>
+        <div><input type="text"/></div>
+        <div class="btn_box">
+          <button id="back2" type="button">Previous</button>
+          
+          <button id="Submit" type="button">Submit</button>
+          
+        </div>
+      </form>
+      <div class="progress_container">
+        <div class="progress" id="progress"></div>
+        <div class="rectangle active"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        
+      </div>
+    </div>
+  </body>
+</html>

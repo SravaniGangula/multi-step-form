@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+  background: #DEF3F1;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 5px;
+  
+  color: var(--dark-color);
+  font-size: 1rem;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  margin: 2rem auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.container form {
+  width: 340px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-family: inherit;
+  transition: 0.5s ease-in;
+}
+form input {
+  width: 100%;
+  height: 25px;;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  padding-left: 0px;
+  padding-right: -15px;
+  border: 1px solid #DCE4ED;
+  border-radius: 5px;
+  background: transparent;
+  font-family: inherit;
+}
+.Name,.Email,.phone{
+  padding-left: 10px;
+  color: #39474D;
+}
+
+.btn_box {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+form button {
+  width: 100px;
+  height: 50px;
+  margin: 10px 5px;
+  background-color: #39474D;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border-radius: 5px;
+  color: white;
+}
+form button:active {
+  transform: scale(0.98);
+}
+#form2 {
+  left: 450px;
+}
+#form3 {
+  left: 450px;
+}
+#back1,#back2{
+  background-color: whitesmoke;
+  color:#39474D;;
+  
+}
+
+#Submit {
+  background-color:#6AD9A3 ;
+  color: white;
+}
+
+#next1{
+  
+  width: 103%;
+}
+.progress_container {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: -1rem auto;
+  position: relative;
+}
+.progress_container::before {
+  content: "";
+  background-color:#F3F6F9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 10px;
+  width: 100%;
+  z-index: 0;
+}
+.progress {
+  background-color: #6AD9A3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 10px;
+  width: 20%;
+  z-index: 1;
+  transition: 0.4s ease-in;
+}
+.rectangle {
+  background-color: var(--light-gray-color);
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+.rectangle.active {
+  color: #6AD9A3;
+  
+}
